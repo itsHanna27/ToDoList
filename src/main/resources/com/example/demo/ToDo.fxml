@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="rootVBox" alignment="TOP_CENTER" prefHeight="483.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ToDoController">
+
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+
+   <children>
+
+      <!-- 🔲 Window Control Bar (Minimize, Close) -->
+      <HBox fx:id="titleBar" alignment="TOP_RIGHT" prefHeight="3.0" prefWidth="529.0" spacing="5">
+
+         <!-- 🔲 App Title -->
+         <Label fx:id="titleLabel" alignment="TOP_RIGHT" contentDisplay="CENTER" prefHeight="35.0" prefWidth="336.0" style="-fx-font-weight: bold; -fx-font-size: 24; -fx-font-family: 'Comic Sans MS';" text="To Do List" textAlignment="CENTER" textFill="#fffdfd">
+            <opaqueInsets>
+               <Insets bottom="10.0" left="10.0" />
+            </opaqueInsets>
+            <HBox.margin>
+               <Insets bottom="5.0" />
+            </HBox.margin>
+         </Label>
+         <Pane HBox.hgrow="ALWAYS" />
+         <Button fx:id="minimizeButton" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" onAction="#handleMinimize" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: white; -fx-font-size: 18px; -fx-cursor: hand;" styleClass="window-button" text="➖" textAlignment="CENTER">
+            <opaqueInsets>
+               <Insets right="5.0" />
+            </opaqueInsets>
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+            <padding>
+               <Insets bottom="7.0" />
+            </padding></Button>
+         <Button fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleClose" style="-fx-font-weight: 900; -fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: white; -fx-font-size: 18px; -fx-cursor: hand; -fx-font-family: &quot;Arial Black&quot;;" styleClass="window-button" text="X" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets right="7.0" />
+            </HBox.margin></Button>
+      </HBox>
+
+      <!-- 🔲 Task List -->
+      <ListView fx:id="taskListView" prefHeight="199.0" prefWidth="500.0" style="-fx-max-width: 500; -fx-background-radius: 15;">
+         <opaqueInsets>
+            <Insets bottom="10.0" />
+         </opaqueInsets>
+      </ListView>
+
+      <!-- 🔲 Task Control Buttons -->
+      <HBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Button fx:id="markDoneButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="150.0" styleClass="hover-button" text="Mark as Done" textAlignment="CENTER" />
+            <Button fx:id="deleteTaskButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="150.0" styleClass="hover-button" text="Delete Task" textAlignment="CENTER" />
+            <Button fx:id="sortPriorityButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="150.0" styleClass="hover-button" text="Sort by Priority">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+
+      <!-- 🔲 Task Input -->
+      <VBox alignment="TOP_CENTER" prefHeight="137.0" prefWidth="500.0" spacing="10.0" style="-fx-max-width: 500; -fx-background-radius: 15;" styleClass="input-bar">
+         <children>
+            <TextField fx:id="titleField" alignment="CENTER" prefHeight="40.0" prefWidth="450.0" promptText="Title" style="-fx-max-width: 450; -fx-background-radius: 12; -fx-border-width: 1; -fx-padding: 6 10; -fx-font-size: 14;">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+            </TextField>
+
+            <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="500.0" spacing="19.0">
+               <children>
+                  <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="225.0" style="-fx-background-radius: 12;" />
+                  <ComboBox fx:id="priorityComboBox" prefHeight="27.0" prefWidth="225.0" style="-fx-background-radius: 12;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <!-- 🔲 Bottom Buttons -->
+      <HBox alignment="TOP_RIGHT" prefHeight="73.0" prefWidth="529.0" spacing="10.0">
+         <children>
+            <Button fx:id="toggleThemeButton" contentDisplay="CENTER" minWidth="43.0" prefHeight="33.0" prefWidth="43.0" styleClass="toggle-theme-button" text="❤">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Button>
+
+            <Button fx:id="addTaskButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="121.0" styleClass="hover-button" text="Add Task" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets right="30.0" top="3.0" />
+               </HBox.margin>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+
+   </children>
+</VBox>

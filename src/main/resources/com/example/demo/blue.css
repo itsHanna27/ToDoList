@@ -1,0 +1,179 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #c6caff, #9fa6ff);
+ -fx-font-family: 'Trebuchet MS', 'Century Gothic', 'Comic Sans MS', sans-serif;
+}
+
+.-view, .vbox {
+    -fx-background-color: #b0b5ff;
+    -fx-border-radius: 20;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(90, 70, 200, 0.15), 4, 0.2, 0, 2);
+}
+
+.hover-button {
+    -fx-background-color: #7a66ff;
+    -fx-text-fill: #f0e6ff;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.2), 2, 0.3, 0, 1);
+    -fx-padding: 8 12;
+}
+
+.hover-button:hover {
+    -fx-background-color: #5465ff;
+}
+
+.hover-effect:hover {
+    -fx-background-color: #7a66ff;
+    -fx-cursor: hand;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #c4bcff;
+    -fx-border-width: 1.5;
+    -fx-padding: 6 10;
+}
+
+.vbox, .hbox {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.08), 4, 0.2, 0, 2);
+}
+
+.priority-high, .priority-medium, .priority-low {
+    -fx-background-radius: 12;
+    -fx-background-insets: 0;
+    -fx-padding: 2 8;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-alignment: center;
+    -fx-min-height: 20;
+    -fx-min-width: 40;
+    -fx-cursor: hand;
+}
+
+.priority-high {
+    -fx-background-color: #5e4eff;
+}
+
+.priority-medium {
+    -fx-background-color: #7a66ff;
+}
+
+.priority-low {
+    -fx-background-color: #c4bcff;
+}
+
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 6, 0.3, 0, 2);
+    -fx-text-fill: #2e004f;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
+}
+
+.list-cell:hover {
+    -fx-background-color: #d6d0ff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.2), 8, 0.5, 0, 3);
+}
+
+.list-view:focused .list-cell:filled:selected {
+    -fx-background-color: #7a66ff;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: inherit;
+}
+
+.list-cell .priority-high {
+    -fx-background-color: #5e4eff;
+}
+.list-cell .priority-medium {
+    -fx-background-color: #7a66ff;
+}
+.list-cell .priority-low {
+    -fx-background-color: #c4bcff;
+}
+
+.priority-high:hover,
+.priority-medium:hover,
+.priority-low:hover {
+    -fx-background-color: #e4e0ff;
+    -fx-border-color: #a290ff;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+.styled-task-list {
+    -fx-background-color: #dcd7ff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 5;
+}
+
+.styled-task-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.styled-task-list .list-cell:filled:selected,
+.styled-task-list .list-cell:filled:selected:hover {
+    -fx-background-color: #bdb5ff;
+}
+
+.tooltip {
+    -fx-background-color: #b2b8ff;
+    -fx-text-fill: #2e004f;
+    -fx-font-weight: bold;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(90, 60, 255, 0.2), 4, 0.3, 0, 2);
+}
+
+.date-picker > .arrow-button {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-background-color: #fff;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #7a66ff;
+}
+
+* {
+    -fx-focus-color: transparent !important;
+    -fx-faint-focus-color: transparent !important;
+    -fx-border-color: transparent !important;
+    -fx-effect: none !important;
+}
+
+.toggle-theme-button {
+    -fx-background-color: linear-gradient(to bottom, #7a66ff, #bdb5ff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.3), 4, 0.3, 0, 2);
+    -fx-padding: 6 8;
+}
+
+.toggle-theme-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #a290ff, #dcd7ff);
+    -fx-text-fill: white;
+}
+.combo-box-popup .list-view {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 3;
+}

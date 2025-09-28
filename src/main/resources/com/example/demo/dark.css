@@ -1,0 +1,279 @@
+ .root {
+    -fx-background-color: linear-gradient(to bottom, #1c152b, #2a1f3d);
+    -fx-font-family: 'Trebuchet MS', 'Century Gothic', 'Comic Sans MS', sans-serif;
+}
+
+.-view, .vbox {
+    -fx-background-color: #302345;
+    -fx-border-radius: 20;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0.3, 0, 2);
+}
+
+.hover-button {
+    -fx-background-color: #4b3a91;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(90, 70, 170, 0.3), 2, 0.3, 0, 1);
+    -fx-padding: 8 12;
+}
+
+.hover-button:hover {
+    -fx-background-color: #6a55cc;
+    -fx-text-fill: #f1e9ff;
+}
+
+.hover-effect:hover {
+    -fx-background-color: #6a55cc;
+    -fx-cursor: hand;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #2b2040;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6 10;
+    -fx-text-fill: #e4d7ff;
+    -fx-border-color: #3F2D5C;
+    -fx-border-width: 1;
+}
+
+.vbox, .hbox {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0.2, 0, 2);
+}
+
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 6, 0.3, 0, 2);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
+}
+
+
+.list-cell:hover {
+    -fx-background-color: rgba(120, 87, 173, 0.5);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.2), 8, 0.5, 0, 3);
+    -fx-text-fill: white;
+}
+.list-cell:hover * {
+    -fx-text-fill: white !important;
+}
+
+
+.list-cell:filled:selected,
+.list-cell:filled:selected:hover {
+    -fx-text-fill: white;
+}
+.list-cell:filled:selected * {
+    -fx-text-fill: white !important;
+}
+
+
+.priority-high, .priority-medium, .priority-low {
+    -fx-background-radius: 12;
+    -fx-background-insets: 0;
+    -fx-padding: 2 8;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-alignment: center;
+    -fx-min-height: 20;
+    -fx-min-width: 40;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.1), 2, 0.2, 0, 1);
+}
+
+.priority-high {
+    -fx-background-color: #3e3a63;
+    -fx-text-fill: #ffffff;
+}
+
+.priority-medium {
+    -fx-background-color: #56527a;
+    -fx-text-fill: #ffffff;
+}
+
+.priority-low {
+    -fx-background-color: #726f91;
+    -fx-text-fill: #1c102a;
+}
+
+.priority-high:hover,
+
+.priority-medium:hover,
+
+.priority-low:hover {
+    -fx-background-color: #958fb8;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #7e78a8;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+
+.styled-task-list {
+    -fx-background-color: #241c38;
+    -fx-background-insets: 0;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 5;
+}
+
+.styled-task-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.styled-task-list .list-cell:filled:selected,
+.styled-task-list .list-cell:filled:selected:hover {
+    -fx-background-color: #483673;
+}
+
+
+.tooltip {
+    -fx-background-color: #302345;
+    -fx-text-fill: #e7dcff;
+    -fx-font-weight: bold;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(122, 102, 255, 0.3), 4, 0.3, 0, 2);
+}
+
+
+.date-picker > .arrow-button {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-background-color: #2B2040;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: rgba(120, 87, 173, 0.5);
+}
+
+
+* {
+    -fx-focus-color: transparent !important;
+    -fx-faint-focus-color: transparent !important;
+    -fx-border-color: transparent !important;
+    -fx-effect: none !important;
+}
+
+
+.toggle-theme-button {
+    -fx-background-color: linear-gradient(to bottom, #4b3a91, #362c72);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(80, 60, 160, 0.3), 4, 0.3, 0, 2);
+    -fx-padding: 6 8;
+}
+
+.toggle-theme-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #6a55cc, #4b3a91);
+    -fx-text-fill: white;
+}
+
+
+#taskListView {
+    -fx-background-color: #352A49;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+#taskListView .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
+}
+
+#taskListView .list-cell:hover {
+    -fx-background-color: rgba(120, 87, 173, 0.5);
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+#taskListView .list-cell:hover * {
+    -fx-text-fill: white !important;
+}
+
+#taskListView .list-cell:filled:selected,
+#taskListView .list-cell:filled:selected:hover {
+    -fx-background-color: #483673;
+    -fx-text-fill: white;
+}
+#taskListView .list-cell:filled:selected * {
+    -fx-text-fill: white !important;
+}
+#taskListView .list-cell {
+    -fx-text-fill: white !important;
+}
+
+#taskListView .list-cell * {
+    -fx-text-fill: white !important;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: #3F2D5C;
+    -fx-control-inner-background: #3F2D5C;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e4d7ff;
+    -fx-font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
+    -fx-font-size: 13px;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(120, 87, 173, 0.5);
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #483673;
+    -fx-text-fill: white;
+}
+
+.combo-box {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+
+.combo-box .arrow-button {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+
+.combo-box-popup .list-view {
+    -fx-background-color: #3F2D5C;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 3;
+}
+
+
+.combo-box-popup .list-cell {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-text-fill: #e4d7ff;
+    -fx-padding: 6 10;
+}
+
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(120, 87, 173, 0.5);
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #483673;
+}

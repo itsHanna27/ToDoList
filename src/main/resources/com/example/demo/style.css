@@ -1,0 +1,211 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #F3E9FC, #dcd0ff);
+-fx-font-family: 'Trebuchet MS', 'Century Gothic', 'Comic Sans MS', sans-serif;
+}
+
+.-view, .vbox {
+    -fx-background-color: #dcd0ff; /* lilac */
+    -fx-border-radius: 20;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0.2, 0, 2);
+}
+
+.hover-button {
+    -fx-background-color: #cbb7ff;
+    -fx-text-fill: #4a2e6c;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 2, 0.3, 0, 1);
+    -fx-padding: 8 12;
+}
+
+.hover-button:hover {
+    -fx-background-color: #dab6fc;
+}
+
+.hover-effect:hover {
+    -fx-background-color: #b197fc; /* darker purple on hover */
+    -fx-cursor: hand;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6 10;
+}
+
+.vbox, .hbox {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0.2, 0, 2);
+}
+
+/* Priority tag styles */
+.priority-high, .priority-medium, .priority-low {
+    -fx-background-radius: 12;
+    -fx-background-insets: 0;
+    -fx-padding: 2 8;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-alignment: center;
+    -fx-min-height: 20;
+    -fx-min-width: 40;
+    -fx-cursor: hand;
+}
+
+.priority-high {
+    -fx-background-color: #5e2b97;
+}
+
+.priority-medium {
+    -fx-background-color: #9d64e0;
+}
+
+.priority-low {
+    -fx-background-color: #d7bfff;
+}
+
+/* ListView appearance */
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* semi-transparent glass */
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 6, 0.3, 0, 2);
+    -fx-text-fill: #2e004f;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
+    -fx-transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.list-cell:hover {
+    -fx-background-color: #e8d8ff; /* soft lilac glow */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(90, 45, 140, 0.2), 8, 0.5, 0, 3);
+}
+
+
+
+/* Only apply selection color if the ListView is focused */
+.list-view:focused .list-cell:filled:selected {
+    -fx-background-color: #b197fc; /* lilac */
+    -fx-text-fill: white;
+}
+
+/* When ListView is not focused, remove highlight */
+.list-view .list-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: inherit;
+}
+
+
+/* Prevent selection hover from overriding priority label color */
+.list-cell .priority-high {
+    -fx-background-color: #5e2b97;
+}
+
+.list-cell .priority-medium {
+    -fx-background-color: #9d64e0;
+}
+
+.list-cell .priority-low {
+    -fx-background-color: #d7bfff;
+}
+
+/* 🔮 NEW: Priority hover box effect */
+.priority-high:hover,
+.priority-medium:hover,
+.priority-low:hover {
+    -fx-background-color: #e9dfff; /* soft lilac on hover */
+    -fx-text-fill: #4a2e6c;
+    -fx-border-color: #d0b9ff;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+/* Background of the ListView container */
+.styled-task-list {
+    -fx-background-color: #f5eafe; /* soft lilac */
+    -fx-background-insets: 0;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 5;
+}
+
+/* Each cell inside ListView */
+.styled-task-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* Optional: softer selection color */
+.styled-task-list .list-cell:filled:selected,
+.styled-task-list .list-cell:filled:selected:hover {
+    -fx-background-color: #d9c8f5;
+}
+.tooltip {
+    -fx-background-color: #dcd0ff;
+    -fx-text-fill: #2e004f;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 2);
+}
+.date-picker > .arrow-button {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-background-color: #fff;
+
+
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #dab6fc; /* subtle hover color */
+}
+
+* {
+    -fx-focus-color: transparent !important;
+    -fx-faint-focus-color: transparent !important;
+    -fx-border-color: transparent !important;
+    -fx-effect: none !important;
+}
+.toggle-theme-button {
+ -fx-background-color: linear-gradient(to bottom, #ada7ff, #ddbdfc);
+    -fx-text-fill: white;
+ -fx-font-weight: bold;
+      -fx-font-size: 14px;
+       -fx-background-radius: 10;
+            -fx-cursor: hand;
+            -fx-effect: dropshadow(gaussian, rgba(74, 46, 108, 0.3), 4, 0.3, 0, 2);
+            -fx-padding: 6 8;
+}
+
+.toggle-theme-button:hover {
+  -fx-background-color: linear-gradient(to bottom, #dcd0ff, #b9a7ff);
+      -fx-text-fill: white;
+
+}
+
+.combo-box-popup .list-view {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 3;
+}
+#titleLabel {
+    -fx-text-fill: #492D6B; /* or change this to whatever you want */
+
+    }
+    .window-button {
+        -fx-background-color: transparent;
+        -fx-text-fill: white;
+        -fx-font-size: 14px;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    .window-button:hover {
+        -fx-text-fill: #ff6666; /* Optional: add a hover effect (red for close, etc.) */
+    }
+
+
