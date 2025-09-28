@@ -7,12 +7,12 @@ It includes **three themes** (Blue, Lilac, Dark Mode) and a variety of task mana
 
 ## ✨ Features
 
--  **Themes** – Switch between Blue, Lilac, and Dark Mode.
--  **Task Management** – Add, delete, or mark tasks as done.
--  **Sorting & Reordering** – Sort tasks automatically by priority (High, Medium, Low) or arrange manually with drag-and-drop.
--  **Due Dates** – Assign deadlines; tasks without dates show as “No Date.”
--  **Countdown Tooltips** – Hover over a task to see how much time is left until its due date.
--  **Priority Labels** – Clear visual tags for High, Medium, and Low importance.
+-  **Themes** - Switch between Blue, Lilac, and Dark Mode.
+-  **Task Management** - Add, delete, or mark tasks as done.
+-  **Sorting & Reordering** - Sort tasks automatically by priority (High, Medium, Low) or arrange manually with drag-and-drop.
+-  **Due Dates** - Assign deadlines; tasks without dates show as “No Date.”
+-  **Countdown Tooltips** - Hover over a task to see how much time is left until its due date.
+-  **Priority Labels** - Clear visual tags for High, Medium, and Low importance.
 
 ---
 
