@@ -48,7 +48,7 @@ Scene Builder – Visual layout tool
 
 ## 📜 License
 
-Copyright (c) 2025 itshanna27
+Copyright (c) 2025 itsHanna27
 
 This project is provided for personal use only.  
 You may view and run the code for learning or personal tasks.
