@@ -20,7 +20,7 @@ It includes **three themes** (Blue, Lilac, Dark Mode) and a variety of task mana
 
 | Blue Theme                | Lilac Theme                 | Dark Mode                |
 |---------------------------|-----------------------------|--------------------------|
-| ![Blue Theme](./blue.png) | ![Lilac Theme](./lilac.png) | ![Dark Mode](./dark.png) |
+| ![Blue Theme](./src/main/java/com/example/demo/blue.png) | ![Lilac Theme](./src/main/java/com/example/demo/lilac.png) | ![Dark Mode](./src/main/java/com/example/demo/dark.png) |
 
 
 ---
@@ -66,4 +66,4 @@ All rights reserved.
 Now the clone command points to the right repo:
 
 ```bash
-git clone https://github.com/itshanna27/ToDoList.git
+git clone https://github.com/itsHanna27/ToDoList.git
