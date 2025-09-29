@@ -63,7 +63,7 @@ All rights reserved.
 
 ---
 
-Now the clone command points to the right repo:
+Use this to clone the code! :):
 
 ```bash
 git clone https://github.com/itsHanna27/ToDoList.git
